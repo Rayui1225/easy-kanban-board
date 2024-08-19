@@ -1,0 +1,10 @@
+ /* Basic styles for the board */
+.board {
+  display: flex;
+  justify-content: center;
+  height: 100vh;  /* 使board佔據整個視窗高度 */
+  background-color: #333; /* Dark background */
+  padding: 20px;
+  overflow-x: auto;
+  box-sizing: border-box;
+}

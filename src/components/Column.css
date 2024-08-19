@@ -1,0 +1,58 @@
+.column {
+  margin: 16px; /* 增加列之間的間距 */
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  width: 350px; /* 增加列的寬度 */
+  background-color: #444;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; /* 防止列縮小 */
+  height: calc(100vh - 40px); /* 限制列的最大高度，減去外部padding */
+  overflow-y: auto; /* 使列內部有垂直滾動條 */
+}
+
+.column-header {
+  padding: 10px;
+  background-color: #333;
+  border-bottom: 1px solid grey;
+  flex-shrink: 0; /* 確保標題不會縮小 */
+}
+
+.add-task {
+  display: flex;
+  padding: 16px; /* 增加新增欄的邊距 */
+  flex-shrink: 0; /* 確保新增欄不會縮小 */
+}
+
+.add-task input {
+  flex: 1;
+  padding: 6px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.add-task button {
+  padding: 4px 8px;
+  background: #5aac44;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background: #519839;
+}
+
+.column-content {
+  padding: 16px; /* 增加卡片內容的邊距 */
+  transition: background-color 0.2s ease;
+  flex-grow: 1;
+  overflow-y: auto; /* 使卡片內容有垂直滾動條 */
+}
+
+.dragging-over {
+  background-color: #555;
+}

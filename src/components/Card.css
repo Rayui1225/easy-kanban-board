@@ -1,0 +1,42 @@
+.task {
+  user-select: none;
+  padding: 16px;
+  margin: 0 0 16px 0; /* 增加卡片之間的間距 */
+  min-height: 50px;
+  background-color: #555;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+  transition: background-color 0.1s ease;
+  position: relative;
+}
+
+.dragging {
+  background-color: #666;
+}
+
+.task-content {
+  margin-top: 10px; /* 確保內容不會被按鈕遮擋 */
+}
+
+.task-actions {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: flex;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  padding: 2px 4px;
+  background-color: #888;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 10px; /* 縮小按鈕字體 */
+}
+
+.task-actions button:hover {
+  background-color: #777;
+}
