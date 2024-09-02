@@ -24,17 +24,17 @@ A simple and effective Kanban board application built with React and Flask, desi
 - Flask-Caching for improved performance
 
 ## Project Structure
-easy-kanban-board/
-├── kanban-board/         # Frontend React application
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Board.js
-│   │   │   ├── Card.js
-│   │   │   └── Column.js
-│   │   └── ...
-│   └── ...
-└── python api server/    # Backend Flask application
-└── server.py
+easy-kanban-board/  
+├── kanban-board/         # Frontend React application  
+│   ├── src/  
+│   │   ├── components/  
+│   │   │   ├── Board.js  
+│   │   │   ├── Card.js  
+│   │   │   └── Column.js  
+│   │   └── ...  
+│   └── ...  
+└── python api server/    # Backend Flask application  
+└── server.py  
 
 ## API Endpoints
 
